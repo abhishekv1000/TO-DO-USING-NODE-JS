@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title> MY NOTES </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+        <h1 style="text-align: center;color: rgb(0, 0, 0);font-size: 30px;"> <%= live %> </h1>
+    </div>
+     <div class="container" >
+        <form action="/" method="post">
+
+            <span>
+                <input name="text" placeholder="Enter Your NOTES" type="text">
+                <button > ADD</button>
+            </span>
+
+           <div class="content">
+             <!-- <% var i=0 %> -->
+             <% for(var i=0 ; i < item.length;i++){ %>
+              
+              <p > <input type="checkbox"><%= item[i] %></p>
+
+             <% } %>
+              
+           </div>
+
+        </form>
+
+
+     </div>
+
+    
+</body>
+</html>
